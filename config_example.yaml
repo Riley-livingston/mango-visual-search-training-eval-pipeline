@@ -1,0 +1,45 @@
+training:
+  # Training data configuration
+  data_dir: "data/training_images"
+  model_save_dir: "models"
+  batch_size: 8
+  num_workers: 8
+  num_epochs: 40
+  learning_rate: 0.0001
+  patience: 3
+  # Model architecture settings
+  model_type: "resnet34"
+  pretrained: true
+  dropout_rate: 0.5
+
+vectorization:
+  # Vectorization settings
+  input_dir: "data/ground_truth_images"
+  output_path: "data/vectors/vector_dict.pkl"
+  batch_size: 500
+  save_interval: 3000
+  device: null  # Will auto-detect cuda/cpu
+
+visualization:
+  # Visualization parameters
+  selected_classes: 
+    - "example_class1"
+    - "example_class2"
+    - "example_class3"
+  output_path: "visualizations/3d_scatter.html"
+  width: 700
+  marker_size: 6
+  marker_opacity: 0.8
+  pca_components: 3
+
+evaluation:
+  # Evaluation settings
+  test_dirs:
+    - "data/test_sets/normal"
+    - "data/test_sets/holo"
+    - "data/test_sets/full_art"
+  reference_dirs:
+    - "data/ground_truth_images"
+    - "data/reference_images"
+  batch_size: 8
+  num_workers: 8 

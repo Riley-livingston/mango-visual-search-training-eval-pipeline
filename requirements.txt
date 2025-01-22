@@ -1,0 +1,29 @@
+# Deep Learning Framework
+torch>=1.9.0
+torchvision>=0.10.0
+
+# Data Processing
+numpy>=1.19.2
+pandas>=1.2.4
+Pillow>=8.2.0
+
+# Machine Learning
+scikit-learn>=0.24.2
+
+# Visualization
+plotly>=4.14.3
+matplotlib>=3.4.2
+
+# Progress Bars
+tqdm>=4.61.0
+
+# Configuration
+pyyaml>=5.4.1
+
+# Vector Database
+pinecone-client>=2.2.1
+
+# Optional: Development Tools
+black>=22.3.0  # code formatting
+pylint>=2.8.2  # code analysis
+pytest>=6.2.4  # testing 
